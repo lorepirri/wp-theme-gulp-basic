@@ -4,9 +4,9 @@
 const
 
   // ** change these two to yours **
-  wordpress_project_name = 'mentarossa',
-  theme_name = 'mentarossa',
-  browserSyncProxy = 'http://local.mentarossa.test/',
+  wordpress_project_name = 'your-site-folder', // root folder in Vagrant
+  theme_name = 'your-site-theme-name',
+  browserSyncProxy = 'http://local.your-site.test/', // or e.g. localhost:3000
 
   // source and build folders, ** change this to yours **
   dir = {
