@@ -21,7 +21,6 @@ const
   imagemin      = require('gulp-imagemin'),
   sass          = require('gulp-sass'),
   postcss       = require('gulp-postcss'),
-  deporder      = require('gulp-deporder'),
   concat        = require('gulp-concat'),
   stripdebug    = require('gulp-strip-debug'),
   uglify        = require('gulp-uglify'),
@@ -114,7 +113,6 @@ const js_settings = {
 const js = function() {
 
   return src(js_settings.src)
-    .pipe(deporder())
     .pipe(concat(js_settings.filename))
     .pipe(stripdebug())
     .pipe(uglify())
